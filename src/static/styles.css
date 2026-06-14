@@ -59,19 +59,118 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 18px;
+  border: 1px solid #d7def7;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #ffffff 0%, #f6f8ff 100%);
+  box-shadow: 0 10px 24px rgba(26, 35, 126, 0.08);
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
+  margin-bottom: 0;
   color: #0066cc;
 }
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.activity-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.activity-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background-color: #e8eefc;
+  color: #1a237e;
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.activity-description {
+  color: #334;
+}
+
+.activity-schedule {
+  margin-bottom: 14px;
+}
+
+.participants-section {
+  padding-top: 12px;
+  border-top: 1px solid #e3e8fb;
+}
+
+.participants-title {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #1a237e;
+}
+
+.participants-list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  color: #2d3559;
+}
+
+.participants-list li {
+  margin-bottom: 6px;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background-color: #eef2ff;
+}
+
+.participant-email {
+  overflow-wrap: anywhere;
+}
+
+.participant-delete {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 999px;
+  background-color: #ffdfe3;
+  color: #b42318;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.participant-delete:hover {
+  background-color: #ffc9d1;
+  transform: scale(1.05);
+}
+
+.participant-delete:focus-visible {
+  outline: 2px solid #1a237e;
+  outline-offset: 2px;
+}
+
+.participant-empty {
+  color: #6b7280;
+  font-style: italic;
 }
 
 .form-group {
